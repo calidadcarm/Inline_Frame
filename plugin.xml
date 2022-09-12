@@ -1,0 +1,78 @@
+<root>
+   <name>Inline Frame</name>
+   <key>iframe</key>
+   <state>stable</state>
+   <logo>https://raw.githubusercontent.com/calidadcarm/iframe/main/img/frames-icon.png</logo>
+   <description>
+      <short>
+         <es>El plugin iframe le permite agregar en la página de Inicio una pestaña nueva llamada 'Vista Gobernanza' en la que poder incluir mediante un Iframe gráficos PowerBi</es>
+         <en>The iframe plugin allows you to add a new tab called 'Vista Gobernanza' on the Home page in which you can include PowerBI graphics through an Iframe</en>
+         <fr>Le plugin iframe vous permet d'ajouter un nouvel onglet appelé 'Vista Gobernanza' sur la page d'accueil dans lequel vous pouvez inclure des graphiques PowerBI via un Iframe.</fr>
+      </short>
+      <long>
+         <es>
+El plugin iframe le permite agregar en la página de Inicio una pestaña nueva llamada 'Vista Gobernanza' en la que poder incluir mediante un Iframe gráficos PowerBi.
+
+Se pueden crear tantos Iframes como se desee pudiendo configurar el nombre de la pestaña y el color de las misma.
+
+La visualización de cada pestaña dentro de 'Vista Gobernanza' se puede controlar directamente por perfil de usuario o por grupo al que pertenece el usuario.
+
+         </es>
+         <en>
+The iframe plugin allows you to add a new tab called 'Governance View' to the Home page in which you can include PowerBi graphics using an Iframe.
+
+You can create as many Iframes as you want, being able to configure the name of the tab and its color.
+
+The display of each tab within the 'Vista Gobernanza' can be controlled directly by user profile or by group to which the user belongs.
+         </en>
+         <fr>
+Le plugin iframe vous permet d'ajouter un nouvel onglet appelé 'Governance View' à la page d'accueil dans lequel vous pouvez inclure des graphiques PowerBi à l'aide d'un Iframe.
+
+Vous pouvez créer autant d'Iframes que vous le souhaitez, en pouvant configurer le nom de l'onglet et sa couleur.
+
+L'affichage de chaque onglet dans la 'Vista Gobernanza' peut être contrôlé directement par profil d'utilisateur ou par groupe auquel l'utilisateur appartient.
+         </fr>
+      </long>
+   </description>
+   <homepage>https://github.com/calidadcarm/iframe/</homepage>
+   <download>https://github.com/calidadcarm/iframe/releases/</download>
+   <issues>https://github.com/calidadcarm/iframe/issues</issues>
+   <readme>https://github.com/calidadcarm/iframe/blob/main/README.md</readme>
+   <authors>
+      <author>CARM</author>
+   </authors>
+   <versions>
+      <version>
+         <num>1.1.1</num>
+         <compatibility>~9.4.6</compatibility>
+         <download_url>https://github.com/calidadcarm/iframe/releases/tag/iframe_1.1.1_Glpi_9.4.x</download_url>
+      </version>
+      <version>
+         <num>1.1.2</num>
+         <compatibility>~9.5.8</compatibility>
+         <download_url>https://github.com/calidadcarm/iframe/releases/tag/iframe_1.1.2_Glpi_9.5.x</download_url>
+      </version>      
+   </versions>
+   <langs>
+      <lang>es_ES</lang>
+   </langs>
+   <license>AGPL3</license>
+   <tags>
+      <es>
+         <tag>iframe</tag>     
+      </es>
+      <en>
+         <tag>iframe</tag>         
+      </en>
+      <fr>
+         <tag>iframe</tag>         
+      </fr>
+   </tags>
+   <screenshots>
+      <screenshot>https://raw.githubusercontent.com/calidadcarm/iframe/main/img/screenshot.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/calidadcarm/iframe/main/img/screenshot1.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/calidadcarm/iframe/main/img/screenshot2.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/calidadcarm/iframe/main/img/screenshot3.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/calidadcarm/iframe/main/img/screenshot4.png</screenshot>
+   </screenshots>
+</root>
