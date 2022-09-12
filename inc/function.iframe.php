@@ -4,7 +4,7 @@
    Plugin Iframe 1.0
    GLPI 9.1.6 
   
-   Autor: Javier David Marín Zafrilla.
+   Autor: Javier David Marï¿½n Zafrilla.
    Fecha: Febrero 2019
 
    ----------------------------------------------------------
@@ -29,7 +29,7 @@ function mostrar_iframe_grupo($iframe_id, $groups_id){
 }
  
  
-   // Función monta las pestañas con los IFRAMES visibles.
+   // Funciï¿½n monta las pestaï¿½as con los IFRAMES visibles.
 
  function show_tabs_Iframes($iframe) {	 
 	
@@ -157,7 +157,7 @@ return $cabecera.$body;
   }	
   
   
-  // Función que obtiene los IDs de los iframes activos y con permisos individual de usuario o por grupo
+  // Funciï¿½n que obtiene los IDs de los iframes activos y con permisos individual de usuario o por grupo
  
      function find_Iframes() {
 
@@ -175,7 +175,7 @@ return $cabecera.$body;
 		$users_id = Session::getLoginUserID(); // Usuario
 		$groups = Group_User::getUserGroups($users_id); // Grupos a los que pertenece el usuario
 		//var_dump($groups);
-		while ($row = $DB->fetch_array($result)) {
+		while ($row = $DB->fetchAssoc($result)) {
 						
 			$id = $row['id'];
 			$right = "plugin_iframe_iframes_".$id;

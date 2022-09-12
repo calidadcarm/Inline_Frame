@@ -127,7 +127,9 @@ class PluginIframeIframe_Group extends CommonDBRelation {
 				 GROUP BY `glpi_groups`.id ORDER BY `glpi_groups`.name";
       if ($result_linked = $DB->query($query)) {
                if ($DB->numrows($result_linked)) {
-                  while ($data = $DB->fetch_assoc($result_linked)) {
+
+                    while ($data = $DB->fetchAssoc($result_linked)) {
+ //                 while ($data = $DB->fetch_assoc($result_linked)) { 
                      $linkname = $data["name"];
                      if ($_SESSION["glpiis_ids_visible"]
                          || empty($data["name"])) {

@@ -35,8 +35,11 @@ class PluginIframeIframe extends CommonDBTM {
    static function getTypeName($nb = 0) {
       return "Plugin Iframe"; 
    }	
-	
 
+	 static function getIcon() {
+		return "fas fa-crop-alt";
+	 }
+	
    /**
     * Get search function for the class
     *
@@ -244,7 +247,8 @@ class PluginIframeIframe extends CommonDBTM {
       echo "<tr class='tab_bg_1'>";
 			echo "<th class='left'  colspan='1'>".__('Name','Names')."</th>";
 			echo "<td class='left'  colspan='3'>";
-				Html::autocompletionTextField($this,"name",array('size' => "124"));
+				//Html::autocompletionTextField($this,"name",array('size' => "124"));
+			echo Html::input('name', ['value' => $this->fields['name'], 'size' => "127"]);
 			echo "</td>";
       echo "</tr>";
 
@@ -359,7 +363,7 @@ class PluginIframeIframe extends CommonDBTM {
 		//Desplegable Iframes
 		echo "<select name=$myname id=$myname>\n";
 		if ($DB->numrows($result)){
-			while ($data=$DB->fetch_array($result)){
+			while ($data=$DB->fetchAssoc($result)){
 				echo "<option value='".$data[0]."'>".$data[1]."</option>\n";			
 			}
 		}

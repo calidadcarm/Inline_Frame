@@ -26,6 +26,10 @@ class PluginIframeProfile extends Profile {
       return '';
    }
 
+   static function getIcon() {
+		return "fas fa-user-lock";
+	} 
+
 
    static function DisplayTabContentForItem(CommonGLPI $item, $tabnum=1, $withtemplate=0) {
       global $CFG_GLPI;
@@ -203,8 +207,8 @@ class PluginIframeProfile extends Profile {
 					   and profiles_id=".$data['id'].";";
 		  
 		  $result = $DB->query($permisos);
-	   // $rights = $DB->fetch_array($result, MYSQL_NUM);
-		  $rights = $DB->fetch_array($result, MYSQLI_NUM); // [CRI] [JMZ18G] MYSQL_NUM deprecated function
+	     $rights = $DB->fetchAssoc($result);
+
           echo "<tr class='tab_bg_1'><th style='background-color: #f9fbfb;' width='70%' align='left'>" . $data['name'] . "&nbsp: </th><td align='center' width='40%'>";	
 $rand = mt_rand();
          echo "<span class='switch pager_controls'>
