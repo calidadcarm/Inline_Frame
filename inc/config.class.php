@@ -5,7 +5,7 @@
    Plugin Iframe 1.0
    GLPI 9.1.6 
   
-   Autor: Javier David Marín Zafrilla.
+   Autor: Javier David Marï¿½n Zafrilla.
    Fecha: Febrero 2019
 
    ----------------------------------------------------------
@@ -25,20 +25,27 @@ class PluginIframeConfig extends CommonDBTM {
       return __('Plugin Iframe', 'Plugin Iframe');
    }   
    
+   static function getIcon() {
+      return "fas fa-crop-alt";
+   }   
    
   static function getMenuContent() {
       global $CFG_GLPI;
 
       $menu['page'] = "/plugins/iframe/front/config.php";
       $menu['title'] = self::getTypeName();
+      $menu['icon']   = self::getIcon();
 	  	  
       $menu['options']['iframe']['page']               = "/plugins/iframe/front/iframe.php";
       $menu['options']['iframe']['title']              = __('Iframe', 'Iframe');
       $menu['options']['iframe']['links']['add']       = '/plugins/iframe/front/iframe.form.php';
       $menu['options']['iframe']['links']['search']    = '/plugins/iframe/front/iframe.php';
+      $menu['options']['iframe']['icon']               = PluginIframeIframe::getIcon();
+      
 
 	  $menu['options']['right']['page']               = "/plugins/iframe/front/right.form.php";
       $menu['options']['right']['title']              = __("Permisos por iframe", "Permisos por iframe");
+      $menu['options']['right']['icon']               = PluginIframeProfile::getIcon();
       
 	  return $menu;
    }
@@ -62,16 +69,16 @@ class PluginIframeConfig extends CommonDBTM {
       
 		echo "<div class='center'>";
 		echo "<table class='tab_cadre'>";
-		echo "<tr><th>".__('Configuraci&oacute;n plugin Iframe','Configuración plugin Iframe')."</th></tr>";
+		echo "<tr><th>".__('Configuraci&oacute;n plugin Iframe','Configuraciï¿½n plugin Iframe')."</th></tr>";
 
 		if (Session::haveRight('plugin_iframe', UPDATE)) {
 		 		   
-		 // Gestión de iframe
+		 // Gestiï¿½n de iframe
 		   echo "<tr class='tab_bg_1 center'><td>";
 		   echo "<a href='".$CFG_GLPI['root_doc']."/plugins/iframe/front/iframe.php' >".__('Ver o modificar iframe','Ver o modificar iframe')."</a>";
 		   echo "</td/></tr>\n";
 
-		   // Gestión de derechos por iframe
+		   // Gestiï¿½n de derechos por iframe
 		   echo "<tr class='tab_bg_1 center'><td>";
 		   echo "<a href='".$CFG_GLPI['root_doc']."/plugins/iframe/front/right.form.php' >".__('Gesti&oacute;n de derechos por iframe','Gesti&oacute;n de derechos por iframe')."</a>";
 		   echo "</td/></tr>\n";			   

@@ -51,12 +51,12 @@ if (isset($_POST["add"])) {
       "PluginIframeConfig",
       "iframe"
     );
-
-if (!isset($_SESSION['glpi_js_toload']['colorpicker'])) {
-echo Html::css('lib/jqueryplugins/spectrum-colorpicker/spectrum.css');
-Html::requireJs('colorpicker');
-} 	
-   
+/*
+    if (!isset($_SESSION['glpi_js_toload']['colorpicker'])) {
+    echo Html::css('lib/jqueryplugins/spectrum-colorpicker/spectrum.css');
+    Html::requireJs('colorpicker');
+    } 	
+*/ 
     if (Session::haveRight('plugin_iframe',UPDATE)) {			
 		$PluginIframeIframe ->display(array('id' => $_GET["id"]));
 		
